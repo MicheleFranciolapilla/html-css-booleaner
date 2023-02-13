@@ -24,12 +24,13 @@ header{
 }
 
 main, footer{
-    padding: 10px;
+    padding: 30px;
 }
 
 /* Sezione di sub intestazione (contenente il titolo della pagina web) con settaggio colori per il sottotitolo*/
 #sub-intestazione{
     color: grey;
+    margin-bottom: 30px;
 }
 
 /* Sovradimensionamento del titolo (unico h1 della pagina) */
@@ -42,4 +43,28 @@ h1{
 #sub-intestazione h2::after{
     color: lightgray;
     content: "The Booleaner";
+}
+
+/* "display: inline-block" ci consente di affiancare le due foto (incluse nei div)*/
+#tim1, #tim2{
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+}
+
+#tim1{
+    width: 50%;
+    height: 600px;
+    background-image: url(../img/tim-1.jpg);
+}
+
+#tim2{
+    width: 47%;
+    height: 600px;
+    background-image: url(../img/tim-2.jpg);
+}
+
+/* Rimozione degli indici di lista */
+#credits{
+    list-style: none;
 }

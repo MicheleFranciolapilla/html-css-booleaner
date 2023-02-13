@@ -17,6 +17,7 @@
     </header>
     
     <main>
+
         <!-- Sezione di sub-intestazione -->
         <!-- L'ubicazione naturale della prima sezione con, all'interno il titolo della pagina, sarebbe nello header ma la si posiziona nel main in funzione di una piu' comoda alternanza dei due fogli di stile richiesti-->
         <section id="sub-intestazione">
@@ -25,6 +26,23 @@
             <h2>Scritto da </h2>
             <h3>il 10/10/2020</h3>
         </section>
+
+        <!-- Sezione con le foto principali e i crediti-->
+        <section>
+            <!-- Si e' scelto di posizionare le foto in due div inline-block per poter rispettare le proporzioni riportate nello screenshot di riferimento dato che, viste le rispettive dimensioni, non si riusciva ad ingrandirle della giusta misura, se utilizzate nei tag "img" -->
+            <div id="tim1"></div>
+            <div id="tim2"></div>
+            <!-- I crediti vengono inseriti in una lista dalla quale vengono resettati gli indici -->
+            <!-- Si e' optato per la lista in alternativa a: -->
+            <!-- titoli h2,h3,.... poiche' semanticamente errati -->
+            <!-- paragrafo poiche' anch'esso semanticamente errato -->
+            <!-- span poiche', trovandosi dopo gli inline-block, avrebbe richiesto delle manovre extra per andare a capo -->
+            <ul id="credits">
+                <li>1st Photo: John S. and James L. Knight Foundation, by Scott Henrichsen</li>
+                <li>2nd Photo: Wikimedia, by Paul Clarke</li>
+            </ul>
+        </section>
+
     </main>
     
     <footer></footer>
