@@ -7,6 +7,10 @@
     <title>Tim Berners-Lee</title>
     <!-- Link al foglio di stile -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Link al google font UBUNTU -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -104,7 +108,17 @@
 
     </main>
     
-    <footer></footer>
+    <!-- pie' di pagina con titolo e 2 foto con link sovrapposto -->
+    <footer>
+        <h2>Potrebbero interessarti</h2>
+        <!-- due div (uno per ciascuna foto) con classe di formattazione comune e id univoco, contenenti ciascuno un link a wikipedia sull'argomento della rispettiva foto -->
+        <div class="footer-img" id="img1">
+            <a class="links" href="https://it.wikipedia.org/wiki/Monitor_(computer)" target="_blank">Monitor</a>
+        </div>
+        <div class="footer-img" id="img2">
+            <a class="links" href="https://it.wikipedia.org/wiki/Computer_grafica" target="_blank">Grafica</a>
+        </div>
+    </footer>
 
 </body>
 </html>

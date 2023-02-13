@@ -31,8 +31,8 @@ section{
     margin: 40px 0;
 }
 
-/* Sezione di sub intestazione (contenente il titolo della pagina web) con settaggio colori per il sottotitolo*/
-#sub-intestazione{
+/* Sezione di sub intestazione (contenente il titolo della pagina web) con settaggio colori per sottotitolo e footer*/
+#sub-intestazione, footer{
     color: grey;
 }
 
@@ -93,4 +93,31 @@ tbody tr:nth-child(odd){
 thead{
     color: white;
     background-color: blueviolet;
+}
+
+/* Classe comune ai div di ciascuna delle due foto del footer */
+.footer-img{
+    margin: 15px 0;
+    width: 300px;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+#img1{
+    background-image: url(../img/monitor.jpg);
+}
+
+#img2{
+    background-image: url(../img/graph.jpg);
+}
+
+/* Attributi del testo dei due tag anchor "a" con font google "Ubuntu"*/
+.links{
+    font-family: 'Ubuntu', sans-serif;
+    color: aquamarine;
+    text-decoration: none;
+    line-height: 90px;
+    font-size: 30px;
 }
