@@ -24,13 +24,16 @@ header{
 }
 
 main, footer{
-    padding: 30px;
+    padding: 0 30px;
+}
+
+section{
+    margin: 30px 0;
 }
 
 /* Sezione di sub intestazione (contenente il titolo della pagina web) con settaggio colori per il sottotitolo*/
 #sub-intestazione{
     color: grey;
-    margin-bottom: 30px;
 }
 
 /* Sovradimensionamento del titolo (unico h1 della pagina) */
