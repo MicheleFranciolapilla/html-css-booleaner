@@ -22,3 +22,24 @@ header{
     bottom: 0;
     left: 10px;
 }
+
+main, footer{
+    padding: 10px;
+}
+
+/* Sezione di sub intestazione (contenente il titolo della pagina web) con settaggio colori per il sottotitolo*/
+#sub-intestazione{
+    color: grey;
+}
+
+/* Sovradimensionamento del titolo (unico h1 della pagina) */
+h1{
+    color: black;
+    font-size: 60px;
+}
+
+/* Completamento del sottotitolo con diversa tonalita' cromatica */
+#sub-intestazione h2::after{
+    color: lightgray;
+    content: "The Booleaner";
+}
