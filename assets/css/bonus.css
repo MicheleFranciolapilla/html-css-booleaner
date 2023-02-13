@@ -1,0 +1,5 @@
+/* Singolo id che riduce la larghezza della pagina web, centrandola e senza intaccare lo header */
+#main-footer-container{
+    width: 85%;
+    margin: auto;
+}

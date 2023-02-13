@@ -7,6 +7,9 @@
     <title>Tim Berners-Lee</title>
     <!-- Link al foglio di stile -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Link al foglio di stile "bonus" -->
+    <!-- Per una visualizzazione a tutta pagina e' sufficiente commentare o cancellare la linea seguente -->
+    <link rel="stylesheet" href="assets/css/bonus.css">
     <!-- Link al google font UBUNTU -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,105 +23,108 @@
         <img id="logo" src="assets/img/logo.svg" alt="logo" width="15%">
     </header>
     
-    <main>
+    <div id="main-footer-container">
+        <main>
 
-        <!-- Sezione di sub-intestazione -->
-        <!-- L'ubicazione naturale della prima sezione con, all'interno il titolo della pagina, sarebbe nello header ma la si posiziona nel main in funzione di una piu' comoda alternanza dei due fogli di stile richiesti-->
-        <section id="sub-intestazione">
-            <!-- Titolo della pagina -->
-            <h1>Internet deve essere al servizio del "bene pubblico": il manifesto di Tim Berners-Lee</h1>
-            <h2>Scritto da </h2>
-            <h3>il 10/10/2020</h3>
-        </section>
-
-        <!-- Sezione con le foto principali e i crediti-->
-        <section>
-            <!-- Si e' scelto di posizionare le foto in due div inline-block per poter rispettare le proporzioni riportate nello screenshot di riferimento dato che, viste le rispettive dimensioni, non si riusciva ad ingrandirle della giusta misura, se utilizzate nei tag "img" -->
-            <div id="tim1"></div>
-            <div id="tim2"></div>
-            <!-- I crediti vengono inseriti in una lista dalla quale vengono resettati gli indici -->
-            <!-- Si e' optato per la lista in alternativa a: -->
-            <!-- titoli h2,h3,.... poiche' semanticamente errati -->
-            <!-- paragrafo poiche' anch'esso semanticamente errato -->
-            <!-- span poiche', trovandosi dopo gli inline-block, avrebbe richiesto delle manovre extra per andare a capo -->
-            <ul id="credits">
-                <li>1st Photo: John S. and James L. Knight Foundation, by Scott Henrichsen</li>
-                <li>2nd Photo: Wikimedia, by Paul Clarke</li>
-            </ul>
-        </section>
-
-        <!-- Sezione con paragrafo e testo in evidenza -->
-        <section>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque. Fermentum odio eu feugiat pretium nibh ipsum consequat. Molestie ac feugiat sed lectus. Facilisi morbi tempus iaculis urna id volutpat lacus laoreet. Laoreet non curabitur gravida arcu. Tristique et egestas quis ipsum. Lorem ipsum dolor sit amet consectetur. <mark>In hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Vel elit scelerisque mauris pellentesque pulvinar pellentesque. Ut ornare lectus sit amet est placerat in egestas.</mark>  Risus in hendrerit gravida rutrum quisque.
-
-            Odio tempor orci dapibus ultrices in. Integer feugiat scelerisque varius morbi enim nunc. Habitant morbi tristique senectus et netus et malesuada fames. Scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt. Consequat id porta nibh venenatis cras sed felis. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus. Senectus et netus et malesuada fames. Venenatis cras sed felis eget. Amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar. Nulla facilisi nullam vehicula ipsum. Elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique. Ultrices neque ornare aenean euismod elementum nisi quis. Nam aliquam sem et tortor consequat id porta nibh venenatis. Tincidunt dui ut ornare lectus sit.</p>
-        </section>
-
-        <!-- Sezione con unordered list -->
-        <section>
-            <!-- tabulazione del punto dei "li" per mezzo di css inline -->
-            <ul style="padding-left: 1em;">
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </li>
-                <li>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </li>
-                <li>Penatibus et magnis dis parturient montes nascetur ridiculus mus. Velit euismod in pellentesque massa placerat duis ultricies. Accumsan in nisl nisi scelerisque eu ultrices vitae. Amet cursus sit amet dictum. 
-                </li>
-            </ul>
-        </section>
-
-        <!-- Sezione con tabella -->
-        <section>
-            <table class="section-table">
-                <thead>
-                    <tr>
-                        <!-- la classe "column" setta la larghezza delle prime due colonne -->
-                        <th class="column">Lorem Ipsum dolor</th>
-                        <th class="column">Lorem Ipsum dolor</th>
-                        <th>Lorem Ipsum dolor</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Lorem Ipsum dolor</td>
-                        <td>Lorem Ipsum dolor</td>
-                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Lorem Ipsum dolor</td>
-                        <td>Lorem Ipsum dolor</td>
-                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Lorem Ipsum dolor</td>
-                        <td>Lorem Ipsum dolor</td>
-                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <!-- Seconda sezione con paragrafo e testo in evidenza -->
-        <section>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices. Nibh sed pulvinar proin gravida. Nisl rhoncus mattis rhoncus urna neque viverra justo nec. Elit scelerisque mauris pellentesque pulvinar pellentesque. Condimentum id venenatis a condimentum vitae sapien pellentesque. <mark>Aliquam purus sit amet luctus venenatis lectus magna fringilla. Netus et malesuada fames ac turpis egestas maecenas pharetra convallis. Aliquam faucibus purus in massa. In ornare quam viverra orci sagittis eu.</mark>  Maecenas volutpat blandit aliquam etiam erat velit scelerisque in. Eget nunc scelerisque viverra mauris in aliquam. Mattis nunc sed blandit libero volutpat sed cras ornare arcu. Sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum. Viverra accumsan in nisl nisi scelerisque eu ultrices. Eget mauris pharetra et ultrices neque ornare aenean. Adipiscing elit duis tristique sollicitudin nibh.</p>
-        </section>
-
-    </main>
+            <!-- Sezione di sub-intestazione -->
+            <!-- L'ubicazione naturale della prima sezione con, all'interno il titolo della pagina, sarebbe nello header ma la si posiziona nel main in funzione di una piu' comoda alternanza dei due fogli di stile richiesti-->
+            <section id="sub-intestazione">
+                <!-- Titolo della pagina -->
+                <h1>Internet deve essere al servizio del "bene pubblico": il manifesto di Tim Berners-Lee</h1>
+                <h2>Scritto da </h2>
+                <h3>il 10/10/2020</h3>
+            </section>
     
-    <!-- pie' di pagina con titolo e 2 foto con link sovrapposto -->
-    <footer>
-        <h2>Potrebbero interessarti</h2>
-        <!-- due div (uno per ciascuna foto) con classe di formattazione comune e id univoco, contenenti ciascuno un link a wikipedia sull'argomento della rispettiva foto -->
-        <div class="footer-img" id="img1">
-            <a class="links" href="https://it.wikipedia.org/wiki/Monitor_(computer)" target="_blank">Monitor</a>
-        </div>
-        <div class="footer-img" id="img2">
-            <a class="links" href="https://it.wikipedia.org/wiki/Computer_grafica" target="_blank">Grafica</a>
-        </div>
-    </footer>
+            <!-- Sezione con le foto principali e i crediti-->
+            <section>
+                <!-- Si e' scelto di posizionare le foto in due div inline-block per poter rispettare le proporzioni riportate nello screenshot di riferimento dato che, viste le rispettive dimensioni, non si riusciva ad ingrandirle della giusta misura, se utilizzate nei tag "img" -->
+                <div id="tim1"></div>
+                <div id="tim2"></div>
+                <!-- I crediti vengono inseriti in una lista dalla quale vengono resettati gli indici -->
+                <!-- Si e' optato per la lista in alternativa a: -->
+                <!-- titoli h2,h3,.... poiche' semanticamente errati -->
+                <!-- paragrafo poiche' anch'esso semanticamente errato -->
+                <!-- span poiche', trovandosi dopo gli inline-block, avrebbe richiesto delle manovre extra per andare a capo -->
+                <ul id="credits">
+                    <li>1st Photo: John S. and James L. Knight Foundation, by Scott Henrichsen</li>
+                    <li>2nd Photo: Wikimedia, by Paul Clarke</li>
+                </ul>
+            </section>
+    
+            <!-- Sezione con paragrafo e testo in evidenza -->
+            <section>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque. Fermentum odio eu feugiat pretium nibh ipsum consequat. Molestie ac feugiat sed lectus. Facilisi morbi tempus iaculis urna id volutpat lacus laoreet. Laoreet non curabitur gravida arcu. Tristique et egestas quis ipsum. Lorem ipsum dolor sit amet consectetur. <mark>In hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Vel elit scelerisque mauris pellentesque pulvinar pellentesque. Ut ornare lectus sit amet est placerat in egestas.</mark>  Risus in hendrerit gravida rutrum quisque.
+    
+                Odio tempor orci dapibus ultrices in. Integer feugiat scelerisque varius morbi enim nunc. Habitant morbi tristique senectus et netus et malesuada fames. Scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt. Consequat id porta nibh venenatis cras sed felis. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus. Senectus et netus et malesuada fames. Venenatis cras sed felis eget. Amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar. Nulla facilisi nullam vehicula ipsum. Elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique. Ultrices neque ornare aenean euismod elementum nisi quis. Nam aliquam sem et tortor consequat id porta nibh venenatis. Tincidunt dui ut ornare lectus sit.</p>
+            </section>
+    
+            <!-- Sezione con unordered list -->
+            <section>
+                <!-- tabulazione del punto dei "li" per mezzo di css inline -->
+                <ul style="padding-left: 1em;">
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </li>
+                    <li>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </li>
+                    <li>Penatibus et magnis dis parturient montes nascetur ridiculus mus. Velit euismod in pellentesque massa placerat duis ultricies. Accumsan in nisl nisi scelerisque eu ultrices vitae. Amet cursus sit amet dictum. 
+                    </li>
+                </ul>
+            </section>
+    
+            <!-- Sezione con tabella -->
+            <section>
+                <table class="section-table">
+                    <thead>
+                        <tr>
+                            <!-- la classe "column" setta la larghezza delle prime due colonne -->
+                            <th class="column">Lorem Ipsum dolor</th>
+                            <th class="column">Lorem Ipsum dolor</th>
+                            <th>Lorem Ipsum dolor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lorem Ipsum dolor</td>
+                            <td>Lorem Ipsum dolor</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Lorem Ipsum dolor</td>
+                            <td>Lorem Ipsum dolor</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Lorem Ipsum dolor</td>
+                            <td>Lorem Ipsum dolor</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+    
+            <!-- Seconda sezione con paragrafo e testo in evidenza -->
+            <section>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices. Nibh sed pulvinar proin gravida. Nisl rhoncus mattis rhoncus urna neque viverra justo nec. Elit scelerisque mauris pellentesque pulvinar pellentesque. Condimentum id venenatis a condimentum vitae sapien pellentesque. <mark>Aliquam purus sit amet luctus venenatis lectus magna fringilla. Netus et malesuada fames ac turpis egestas maecenas pharetra convallis. Aliquam faucibus purus in massa. In ornare quam viverra orci sagittis eu.</mark>  Maecenas volutpat blandit aliquam etiam erat velit scelerisque in. Eget nunc scelerisque viverra mauris in aliquam. Mattis nunc sed blandit libero volutpat sed cras ornare arcu. Sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum. Viverra accumsan in nisl nisi scelerisque eu ultrices. Eget mauris pharetra et ultrices neque ornare aenean. Adipiscing elit duis tristique sollicitudin nibh.</p>
+            </section>
+    
+        </main>
+        
+        <!-- pie' di pagina con titolo e 2 foto con link sovrapposto -->
+        <footer>
+            <h2>Potrebbero interessarti</h2>
+            <!-- due div (uno per ciascuna foto) con classe di formattazione comune e id univoco, contenenti ciascuno un link a wikipedia sull'argomento della rispettiva foto -->
+            <div class="footer-img" id="img1">
+                <a class="links" href="https://it.wikipedia.org/wiki/Monitor_(computer)" target="_blank">Monitor</a>
+            </div>
+            <div class="footer-img" id="img2">
+                <a class="links" href="https://it.wikipedia.org/wiki/Computer_grafica" target="_blank">Grafica</a>
+            </div>
+        </footer>
+    </div>
+
 
 </body>
 
