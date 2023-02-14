@@ -2,4 +2,6 @@
 #main-footer-container{
     width: 85%;
     margin: auto;
+    /* Il "position:relative" mi serve per posizionare correttamente i crediti nel footer */
+    position: relative;
 }

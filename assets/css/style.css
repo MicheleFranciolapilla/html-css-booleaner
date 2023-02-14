@@ -7,7 +7,7 @@
 
 /* Sezione header con background colorato, pattern ripetuto e logo */
 header{
-    height: 100px;
+    height: 150px;
     background-color: blueviolet;
     background-image: url(../img/pattern.png);
     background-size: 20%;
@@ -19,7 +19,7 @@ header{
 /* id del logo che ne consente il posizionamento */
 #logo{
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     left: 10px;
 }
 
@@ -100,9 +100,15 @@ thead{
     margin: 15px 0;
     width: 300px;
     height: 200px;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
+}
+
+/* Effetto "pulsante" al passaggio del mouse sulle foto del footer */
+.footer-img:hover{
+    border: 5px solid orangered;
+    border-radius: 5px;
 }
 
 #img1{
@@ -117,7 +123,36 @@ thead{
 .links{
     font-family: 'Ubuntu', sans-serif;
     color: aquamarine;
-    text-decoration: none;
-    line-height: 90px;
+    line-height: 50px;
     font-size: 30px;
+}
+
+/* Al passaggio del mouse il testo del link cambia colore, invitando alla pressione */
+.links:hover{
+    color: orangered;
+}
+
+/* Id identificativo del gruppo di elementi componenti i crediti nel footer */
+#footer-credits{
+    width: 33%;
+    margin: 25px 0;
+    position: absolute;
+    right: 0;
+}
+
+/* Attributi finalizzati al corretto posizionamento del testo nei crediti del footer*/
+#footer-credits > h4{
+    color: black;
+    margin: 0 10px;
+    display: inline-block;
+    position: relative;
+    top: -25px;
+}
+
+/* Logo contenuto nei crediti all'interno del footer */
+#aki-logo{
+    width: 50px;
+    height: 50px;
+    border: 3px solid pink;
+    border-radius: 50%;
 }
